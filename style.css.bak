@@ -1,0 +1,152 @@
+/* -- general formatting -- */
+
+body {
+	margin:0px 0px 0px; 
+	padding:0px; 
+	background-color: #D7D8C0;/*		 background: #d7d8c0 url('bg.jpg');*/
+/*		background: #d7d8c0 url('bg2.gif');*/
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Trebuchet MS,Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;	
+/*	line-height: 120%;*/
+	}
+
+
+#content {
+	width:700px;
+	margin:0px auto;
+	text-align: justify;
+	padding:25px;
+	margin-bottom:15px;
+
+        color: #000000;
+	/* color:#778D99;*/
+
+	border-right:1px solid #000000;	
+	border-left:1px solid #000000;	
+
+	background-color:#ffffff;      
+	
+	background-attachment:scroll;
+	background-image:url(leaf.jpg);
+	background-repeat:no-repeat;
+	background-position:right top;	
+	}
+
+
+.text{
+	width: 482px;	
+}
+
+
+
+/* -- links -- */
+
+a:link {
+ color: #880000;
+text-decoration: none;
+}
+
+a:visited {
+ color: #880000;
+text-decoration: none;
+}
+
+a:hover {
+ color: #880000;
+text-decoration: underline;
+}
+
+
+
+/* -- title image -- */
+
+.title {
+  	width:700px;
+	margin:0px auto;
+	margin-top: 15px;
+	text-align: justify;
+	padding:25px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+/*	font-family: Trebuchet MS;*/
+
+
+	color: #ffffff;
+
+	border-right:1px solid #000000;	
+	border-left:1px solid #000000;	
+	background-color:#ffffff;      
+	
+	background-attachment:scroll;
+	background-position:right top;	
+	background-image:url(verlauf.gif);
+}
+
+
+/ * -- top navigation -- */
+
+.container {
+	width:700px;
+	margin:0px auto;
+	text-align: justify;	
+	padding:25px;
+	color: #000000;
+
+	border-right:1px solid #000000;	
+	border-left:1px solid #000000;	
+	background-color:#ffffff;      
+}
+
+#miniflex {
+	width: 100%;
+	float: left;
+	font-size: small; /* could be specified at a higher level */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+/*	font-family: Trebuchet MS;*/
+
+	margin: 0;
+	padding: 0 0px 0 0px;
+	border-bottom: 1px solid #333;
+	}
+
+#miniflex li {
+	float: left;
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style: none;
+	}
+	
+#miniflex a:link, #miniflex a:visited {
+	float: left;
+	font-size: 85%;
+	line-height: 20px;
+	font-weight: bold;
+	margin: 0 10px 0 10px;
+	text-decoration: none;
+	color: #999;
+color: #c99;
+	}
+
+#miniflex a.active:link, #miniflex a.active:visited, #miniflex a:hover {
+	border-bottom: 4px solid #880000;
+	padding-bottom: 2px;
+	color:#880000;
+	}
+
+
+
+/* -- publications -- */
+
+.pubtxt{
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;		
+}
+
+/* -- table entries -- */
+
+.ttxt{
+	font-family: Trebuchet MS,Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;		
+}

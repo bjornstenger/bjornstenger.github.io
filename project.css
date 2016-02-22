@@ -1,0 +1,56 @@
+body {
+  color: #000000;
+  background: #ffffff;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  font-size: 12pt;
+  padding: 0px;
+  margin: 0px;
+}
+
+A:link {
+  color: #2266ff;
+text-decoration: none;
+}
+
+A:visited {
+  color: #2266ff;
+text-decoration: none;
+}
+
+A:hover {
+   color: #2266ff;
+text-decoration: underline;
+}
+
+div.top {
+   /* font stuff */
+   color: #ffffff;
+   background:#ce9a00;
+   font-size: 200%;   
+
+   /* about this area */
+   width: 100%;
+   padding: 0.5em;
+   border-bottom: 1px black solid;
+}
+
+div.heading {
+   /* font stuff */
+   color: #404040;
+   font-size: 130%;   
+
+   /* about this area */
+   margin: 1.0em;
+}
+
+div.data {
+   /* font stuff */
+
+   /* about this area */
+   margin: 0.0em 2.0em 0.0em 2.0em;
+}
+
+div.illustration1 {
+   float: right; 
+   margin: 1.3em 1.0em 1.0em 1.0em;
+}

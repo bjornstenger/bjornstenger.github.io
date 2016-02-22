@@ -1,0 +1,776 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<meta name="Author" content="Bjorn Stenger">
+<meta name="keywords" content="computer vision, hand tracking, gesture interface, HCI, detection, learning, human body tracking, virtual fashion show, Dasher">
+
+<title>Bjorn Stenger - Publications</title>
+
+<link type="text/css" rel="stylesheet" href="style.css">
+
+
+<script language="JavaScript">
+<!--
+function ra() {window.open('http://mi.eng.cam.ac.uk/~ra312/');}
+function ch() {window.open('http://carlos-hernandez.org/');}
+function gv() {window.open('http://george-vogiatzis.org/');}
+function rc() {window.open('http://mi.eng.cam.ac.uk/~cipolla/');}
+function tw() {window.open('http://mi.eng.cam.ac.uk/~tew32/');}
+function tk() {window.open('http://mi.eng.cam.ac.uk/~tkk22/');}
+function gb() {window.open('http://www.cs.ucl.ac.uk/staff/G.Brostow/');}
+function jk() {window.open('http://www.ee.surrey.ac.uk/cvssp/');}
+function at() {window.open('http://mi.eng.cam.ac.uk/~at315/');}
+function rn() {window.open('http://mi.eng.cam.ac.uk/~rn246/');}
+function pt() {window.open('http://cms.brookes.ac.uk/staff/PhilipTorr/');}
+function fp() {window.open('http://frank.perbet.org');}
+function mtp() {window.open('http://mtpham.sharkdolphin.com/');}
+function ow() {window.open('http://sites.google.com/site/oliverwoodford/');}
+//-->
+</script>
+
+
+</head>
+
+
+<body>
+
+<div class="header">
+<strong>&nbsp;&nbsp;&nbsp;Bj&ouml;rn Stenger</strong><br> 
+&nbsp;&nbsp;&nbsp;Computer Vision Group, Toshiba Research Europe
+</div>
+
+
+
+
+<div class="container">
+<ul id="miniflex">
+	<li><a href="index.html">home</a></li>
+	<li><a href="pubs.html" class="active">publications</a></li>
+</ul>
+</div>
+
+
+
+
+<div id="content">
+
+<h3>
+[<a href="bjornstenger.bib"  target="_top">bibtex</a>]&nbsp;
+[<a href="publist.html"  target="_top">publication list</a>]
+</h3>
+<br>
+
+<table cellspacing=10>
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/pham_iccv11.png" alt="to fill in">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>A New Distance for Scale-Invariant 3D Shape Recognition and Registration</b><br> 
+<a href="#" onClick="javascript:mtp();return false">M.-T. Pham</a>,
+<a href="#" onClick="javascript:ow();return false">O. J. Woodford</a>,
+<a href="#" onClick="javascript:fp();return false">F. Perbet</a>,
+A. Maki,
+B. Stenger,
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a><br>
+Proc. ICCV, November 2011.<br>
+[<a href="papers/pham_iccv11.pdf"  target="_top">pdf</a>]
+[<a href="http://crl.sharkdolphin.com/common/srt_distance/index.html">project page</a>]
+[<a href="http://www.youtube.com/watch?v=hk4tcX3Ly7k">video</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/anderson_iccv11.png" alt="to fill in">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Color Photometric Stereo for Multicolored Surfaces</b><br> 
+<a href="#" onClick="javascript:ra();return false">R. Anderson</a>,  
+B. Stenger,
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a><br>
+Proc. ICCV, November 2011.<br>
+[<a href="papers/anderson_iccv11.pdf"  target="_top">pdf</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/woodford_bmvc11.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Demisting the Hough Transform for 3D Shape Recognition and Registration</b><br> 
+<a href="#" onClick="javascript:ow();return false">O. J. Woodford</a>,
+<a href="#" onClick="javascript:mtp();return false">M.-T. Pham</a>,
+A. Maki,
+<a href="#" onClick="javascript:fp();return false">F. Perbet</a>,
+B. Stenger<br>
+Proc. BMVC, September 2011.<br>
+[<a href="papers/woodford_bmvc11.pdf"  target="_top">pdf</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/mva11.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Augmenting Depth Camera Output Using Photometric Stereo</b><br> 
+<a href="#" onClick="javascript:ra();return false">R. Anderson</a>,  
+B. Stenger,
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a><br>
+Machine Vision Applications, June 2011.<br>
+[<a href="papers/anderson_mva11.pdf"  target="_top">pdf</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/mcbq1.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Online Multiple Classifier Boosting for Object Tracking</b><br> 
+<a href="#" onClick="javascript:tk();return false">T.-K. Kim</a>,  
+<a href="#" onClick="javascript:tw();return false">T. Woodley</a>,
+B. Stenger,
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a><br>
+Online Learning for Computer Vision (CVPR WS), San Francisco, June 2010.<br>
+[<a href="papers/kim_olcv10.pdf"  target="_top">pdf</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/iccv09a.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Correlated Probabilistic Trajectories for Pedestrian Motion Detection</b><br> 
+<a href="#" onClick="javascript:fp();return false">F. Perbet</a>,
+A. Maki,
+B. Stenger<br> 
+Proc. ICCV, Kyoto, Sep/Oct 2009.<br>
+[<a href="papers/perbet_iccv09.pdf"  target="_top">pdf</a>]
+[<a href="videos/pedestrian_iccv09.mpg" target="_top">video</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/bmvc09c.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Random Forest Clustering and Application to Video Segmentation</b><br> 
+F. Perbet, <!-- <a href="#" onClick="javascript:fp();return false">F. Perbet</a>, -->
+B. Stenger,
+A. Maki<br> 
+Proc. BMVC, London, September 2009.
+<br>
+[<a href="papers/perbet_bmvc09.pdf"  target="_top">pdf</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/flowchart_cascade_small.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Learning to Track With Multiple Observers</b><br> 
+B. Stenger, 
+<a href="#" onClick="javascript:tw();return false">T. Woodley</a>, 
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a><br> 
+Proc. CVPR, Miami, June 2009.<br>
+[<a href="papers/stenger_cvpr09.pdf"  target="_top">pdf</a>]
+[<a href="videos/stenger_cvpr09.mpg" target="_top">video</a>]
+<br>
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/bmvc08b.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>A Vision-based System for Display Interaction</b><br>
+B. Stenger,
+<a href="#" onClick="javascript:tw();return false">T. Woodley</a>,  
+<a href="#" onClick="javascript:tk();return false">T.-K. Kim</a>,  
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a><br>
+HCI, Cambridge, UK, September 2009.<br>
+[<a href="papers/stenger_hci09.pdf"  target="_top">pdf</a>]<br>
+<br>
+<b>AIDIA - Adaptive Interface for Display InterAction </b><br> 
+B. Stenger,
+<a href="#" onClick="javascript:tw();return false">T. Woodley</a>,  
+<a href="#" onClick="javascript:tk();return false">T.-K. Kim</a>,  
+<a href="#" onClick="javascript:ch();return false">C. Hern&aacute;ndez</a>,  
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a><br>
+Proc. BMVC, Leeds, September 2008.<br>
+[<a href="papers/stenger_bmvc08.pdf"  target="_top">pdf</a>]<br>
+[demo at IFA 2008 <a href="http://www.youtube.com/watch?v=RL9MpXhWCrQ&amp;fmt=18"> video</a>]<br>
+[text input via hand tracking using <a href="http://www.inference.phy.cam.ac.uk/dasher/" target="_top">Dasher</a>: <a href="videos/dasher_handtracking.mpg" target="_top">video</a>]
+<br>
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/jointfeatures.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Discriminative Feature Co-occurrence Selection for Object Detection</b><br> 
+T. Mita, T. Kaneko, B. Stenger, O. Hori<br>
+IEEE T. PAMI, Vol. 30, No. 7, pages 1257-1269, July 2008.<br>
+[<a href="papers/mita_pami08.pdf"  target="_top">pdf</a>]
+<!--[on youtube <a href="http://www.youtube.com/watch?v=QoR0AVjAp8s"> video</a>]-->
+<br>
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/videonormals5.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Non-Rigid Photometric Stereo with Colored Lights</b><br> 
+<a href="#" onClick="javascript:ch();return false">C. Hern&aacute;ndez</a>,  
+<a href="#" onClick="javascript:gv();return false">G. Vogiatzis</a>,
+<a href="#" onClick="javascript:gb();return false">G. J. Brostow</a>,
+B. Stenger, 
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a><br>
+Proc. ICCV, Rio de Janeiro, Brazil, October 2007.<br>
+[<a href="papers/hernandez_iccv07.pdf"  target="_top">pdf</a>]
+[<a href="http://mi.eng.cam.ac.uk/research/projects/VideoNormals/" target="_top">project page</a>]
+[video <a href="http://www.youtube.com/watch?v=z9heVY_rwio">part 1</a>, 
+<a href="http://www.youtube.com/watch?v=dL9MXT2ZUIc">part 2</a>]
+<br>
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/track_occlusion.png" alt="">
+</div>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Tracking Using Online Feature Selection and a Local Generative Model</b><br> 
+<a href="#" onClick="javascript:tw();return false">T. Woodley</a>,  
+B. Stenger, 
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a><br>
+Proc. BMVC, Warwick, September 2007.<br>
+[<a href="papers/woodley_bmvc07.pdf"  target="_top">pdf</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/ilda1.png" alt="">
+</div>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Incremental Linear Discriminant Analysis Using Sufficient
+Spanning Sets and Its Applications</b><br>
+<a href="#" onClick="javascript:tk();return false">T.-K. Kim</a>,  
+B. Stenger, 
+<a href="#" onClick="javascript:jk();return false">J. Kittler</a>,  
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a>
+<br>
+International Journal of Computer Vision (IJCV), 2010, accepted.<br>
+<br>
+<b>Incremental Linear Discriminative Analysis<br> Using Sufficient Spanning Set Approximations</b><br> 
+<a href="#" onClick="javascript:tk();return false">T.-K. Kim</a>,  
+S.-F. Wong, 
+B. Stenger, 
+<a href="#" onClick="javascript:jk();return false">J. Kittler</a>,  
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a>
+<br>
+Proc. CVPR, Minneapolis, USA, June 2007.<br>
+[<a href="papers/kim_cvpr07.pdf"  target="_top">pdf</a>]
+[<a href="papers/kim_cvpr07_poster.ppt" target="_top">poster</a>]
+[<a href="code/ILDA07_code.zip"  target="_top">code</a>]
+<br><br><br>
+</div>
+</td>
+</tr>
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/golfswing_small.png" alt="">
+</div>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>A Single Camera Motion Capture System for Human-Computer Interaction</b><br>
+R. Okada, B. Stenger<br>
+Trans. IEICE, Vol. E91-D, No.7, pages 1855-1862, July 2008.<br>
+[<a href="papers/okada_ieice08.pdf"  target="_top">pdf</a>]
+[<a href="videos/toshiba_mocap1_short.mpg"  target="_top">video</a>]
+<p>
+<b>A Video Motion Capture System for Interactive Games</b><br> 
+R. Okada, N. Kondoh, B. Stenger<br>
+Proc. Machine Vision Applications (MVA), pages 186-189, Tokyo, Japan, May 2007.<br>
+[<a href="papers/okada_mva07.pdf"  target="_top">pdf</a>]
+<p>
+<b>Human Posture Estimation Using Silhouette-Tree-Based Filtering</b><br>
+R. Okada, B. Stenger<br>
+Proc. Meeting on Image Recognition and Understanding (MIRU), pages 63-69, Sendai, July 2006. (in Japanese)<br>
+[<a href="papers/okada_miru06.pdf"  target="_top">pdf</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/mva07_ike1.png" alt="">
+</div>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>A Real-Time Hand Gesture Interface Implemented on a Multi-Core Processor</b><br> 
+T. Ike, N. Kishikawa, B. Stenger<br>
+Proc. Machine Vision Applications (MVA), pages 9-12, Tokyo, Japan, May 2007.<br>
+[<a href="papers/ike_mva07.pdf"  target="_top">pdf</a>]
+</div>
+</td>
+</tr>
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/walkcircle.png" alt="">
+</div>
+<br></td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Pose Estimation and Tracking Using Multivariate Regression</b><br>
+<a href="#" onClick="javascript:at();return false">A. Thayananthan</a>,
+<a href="#" onClick="javascript:rn();return false">R. Navaratnam</a>, 
+B. Stenger, 
+<a href="#" onClick="javascript:pt();return false">P. H. S. Torr</a>, 
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a>
+<br>
+Pattern Recognition Letters, Vol. 29, Issue 9, July 2008, Pages 1302-1310.<br>
+[<a href="papers/thayananthan_prl08.pdf"  target="_top">pdf</a>]
+
+<p>
+<b>Multivariate Relevance Vector Machines for Tracking</b><br> 
+<a href="#" onClick="javascript:at();return false">A. Thayananthan</a>,
+<a href="#" onClick="javascript:rn();return false">R. Navaratnam</a>, 
+B. Stenger, 
+<a href="#" onClick="javascript:pt();return false">P. H. S. Torr</a>, 
+<a href="#" onClick="javascript:rc();return false">R. Cipolla</a>
+<br>
+Proc. ECCV, Vol. 3, pages 124-138, Graz, Austria, May 2006.<br>
+[<a href="papers/thayananthan_eccv06.pdf"  target="_top">pdf</a>]
+[<a href="papers/thayananthan_eccv06_poster.ppt" target="_top">poster</a>]
+[<a href="http://mi.eng.cam.ac.uk/~at315/MVRVM.htm"  target="_top">code</a>]
+[video <a href="videos/eccv06_bodytrack.mpg" target="_top">large</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/handnavi2.png" alt="">
+</div>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Template-Based Hand Pose Recognition Using Multiple Cues</b><br> 
+B. Stenger<br> 
+Proc. ACCV, pages 551-560, Hyderabad, India, January 2006.<br>
+[<a href="papers/stenger_accv06.pdf"  target="_top">pdf</a>]
+[<a href="papers/stenger_accv06_poster.ppt">poster</a>]
+[video <a href="videos/stenger_accv06_handpose.mpg" target="_top">large</a>]
+</div>
+</td>
+</tr>
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/vfashionshow2.png" alt="">
+</div>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b> Virtual Fashion Show Using Real-time Markerless Motion Capture</b><br> 
+R. Okada, B. Stenger, T. Ike, N. Kondoh<br>
+Proc. ACCV, Hyderabad, India, pages 801-810, January 2006.<br>
+[<a href="papers/okada_accv06.pdf" target="_top">pdf</a>]
+<!--[on youtube <a href="http://youtube.com/watch?v=CciOOBej_mo" target="_top">video, in Japanese</a>]-->
+<!--[on youtube <a href="http://www.youtube.com/watch?v=58hfb9ZxzK8" target="_top">video, in Japanese and with incorrect title</a>]-->
+<!--[on youtube <a href="http://www.youtube.com/watch?v=LqAIKtDWab8"> video, in Japanese</a>]-->
+<br>
+IEICE, Vol. 104, No. 741, pages 19-14, March 2005. (in Japanese)<br>
+[<a href="papers/okada_IEIE.pdf" target="_top">pdf</a>]<br>
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/kcmsm2.png" alt="">
+</div>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>A Framework for 3D Object Recognition Using the Kernel Constrained Mutual Subspace Method</b><br>
+K. Fukui, B. Stenger, O. Yamaguchi<br>
+Proc. ACCV, Hyderabad, India, pages 315-324, January 2006.<br>
+[<a href="papers/fukui_accv06.pdf" target="_top">pdf</a>]
+</div>
+</td>
+</tr>
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/handclose2.png" alt="">
+</div>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Model-Based Hand Tracking Using a Hierarchical Bayesian Filter</b><br>
+B. Stenger, 
+A. Thayananthan, 
+P. H. S. Torr, 
+R. Cipolla
+<br>
+IEEE T. PAMI, Vol. 28,  No. 9,  pages 1372-1384,  September,  2006.<br>
+[<a href="papers/stenger_pami06.pdf"  target="_top">pdf</a>]
+[<a href="code/pami06_data.zip"  target="_top">data</a>]
+[video <a href="videos/stenger_pami06_handtrack.mpg" target="_top">large</a>]
+<p>
+
+<b>Hand Pose Estimation Using Hierarchical Detection</b><br>
+B. Stenger, 
+A. Thayananthan, 
+P. H. S. Torr, 
+R. Cipolla 
+<br>
+Intl. Workshop on HCI, pages 105-116, Prague, Czech Republic, May 2004.<br>
+[<a href="papers/stenger_hci04.pdf" target="_top">pdf</a>]
+<p>
+
+<b>Filtering Using a Tree-Based Estimator</b><br>
+B. Stenger, 
+A. Thayananthan, 
+P. H. S. Torr,
+R. Cipolla
+<br>
+Proc. 9th ICCV, Vol. II, pages 1063-1070, Nice, France, October 2003.<br>
+[<a href="papers/stenger_iccv03.pdf" target="_top">pdf</a>]
+<p>
+
+<b>Learning a Kinematic Prior for Tree-Based Filtering</b><br>
+A. Thayananthan, 
+B. Stenger, 
+P. H. S. Torr, 
+R. Cipolla
+<br>	
+Proc. BMVC, Vol. 2, pages 589-598, Norwich, UK, September 2003.<br>
+[<a href="papers/thayananthan_bmvc03.pdf" target="_top">pdf</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/shapematching3.png" alt="">
+</div>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Shape Context and Chamfer Matching in Cluttered Scenes</b><br>
+A. Thayananthan, 
+B. Stenger, 
+P. H. S. Torr, 
+R. Cipolla
+<br>
+Proc. CVPR, Vol. I, pages 127-133, Madison, USA, June 2003.<br>
+[<a href="papers/thayananthan_cvpr03.pdf" target="_top">pdf</a>]
+</div>
+</td>
+</tr>
+
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/ukftrack2.png" alt="">
+</div>
+<br>
+<br>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Model-Based 3D Tracking of an Articulated Hand</b><br>
+B. Stenger, 
+P. R. S. Mendon&ccedil;a,,
+R. Cipolla.
+<br>
+Proc. CVPR,
+Vol. II, pages 310-315, Kauai, USA, December 2001.
+<br>
+[<a href="papers/stenger_cvpr01.pdf" target="_top">pdf</a>]
+<p>
+
+<b>Model-Based Hand Tracking Using an Unscented Kalman Filter</b><br>
+B. Stenger, 
+P. R. S. Mendon&ccedil;a, 
+R. Cipolla
+<br>
+Proc. BMVC, Vol. I, pages 63-72, Manchester, UK, September 2001. <br>
+[<a href="papers/stenger_bmvc01.pdf" target="_top">pdf</a>]
+<br>
+<br>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td align = "left" valign = "top">
+<div class="img-shadow">
+<img src="images/hmmsplit4.png" alt="">
+</div>
+</td>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Topology Free Hidden Markov Models: Application to Background Modeling</b><br>
+B. Stenger, 
+V. Ramesh, 
+N. Paragios, 
+F. Coetzee, 
+J. M. Buhmann
+<br>
+Proc. 8th ICCV, Vol. I, pages 294-301, Vancouver, Canada, July 2001. <br>
+[<a href="papers/stenger_iccv01.pdf"  target="_top">pdf</a>]
+</div>
+</td>
+</tr>
+</table>
+
+<br><br>
+<h2>Thesis</h2>
+<hr> 
+
+<table>
+<tr>
+<td align = "left" valign = "top">
+<div class="pubtxt">
+<b>Model-Based Hand Tracking Using A Hierarchical Bayesian Filter</b><br>
+B. Stenger, PhD Thesis, Department of Engineering, University of Cambridge, March 2004.<br>
+[<a href="papers/stenger_thesis04.pdf"  target="_top">pdf</a>]
+</div>
+</td>
+</tr>
+</table>
+
+
+
+
+</div> <!-- content -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
