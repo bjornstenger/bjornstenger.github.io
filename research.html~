@@ -31,8 +31,6 @@ function mtp() {window.open('http://mtpham.sharkdolphin.com/');}
 function ow() {window.open('http://sites.google.com/site/oliverwoodford/');}
 function ss() {window.open('http://mi.eng.cam.ac.uk/~sais2/');}
 function ks() {window.open('http://www2.eng.cam.ac.uk/~ks/soga.html');}
-function sc() {window.open('http://www.coventry.ac.uk/research/research-directories/researchers/dr-sarah-cassidy/');}
-function sbc() {window.open('http://www.autismresearchcentre.com/people_baron-cohen');}
 //-->
 </script>
 
@@ -215,39 +213,6 @@ CVPR, June 2014.<br>
 
 <table cellspacing=10>
 
-
-  <tr>
-<td align = "left" valign = "top">
-<div class="img-shadow">
-<img src="images/cassidy_cviu2015.png" alt="">
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-</td>
-<td align = "left" valign = "top">
-<div class="pubtxt">
-<b>Expressive Visual Text-To-Speech as an Assistive Technology for Individuals with Autism Spectrum Conditions</b><br> 
-<a href="#" onClick="javascript:sc();return false">S. Cassidy</a>,
-B. Stenger,
-L. Van Dongen,
-K. Yanagisawa,
-<a href="#" onClick="javascript:ra();return false">R. Anderson</a>,
-V. Wan,
-<a href="#" onClick="javascript:sbc();return false">S. Baron-Cohen</a>,
-<a href="#" onClick="javascript:rc();return false">R. Cipolla</a><br>
-CVIU, 2015.<br>
-[<a href="papers/cassidy_cviu2015.pdf"  target="_top">pdf</a>]
-<br>
-<br>
-</div>
-</td>
-</tr>
-
-  
-  
 <tr>
 <td align = "left" valign = "top">
 <div class="img-shadow">
