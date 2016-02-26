@@ -74,24 +74,22 @@ text-decoration: underline;
 
 /* -- header image -- */
 .header {
-  	width:700px;
-	margin:0px auto;
-	margin-top: 15px;
-	text-align: justify;
-	padding-top:25px;
-	padding-bottom:25px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size:16px;		
-
-	color: #ffffff;
-
-	border-right:0px solid #000000;	
-	border-left:0px solid #000000;	
-	background-color:#ffffff;      
-	
-	background-attachment:scroll;
-	background-position:right top;	
-	background-image:url(images/gradient.png);
+    width:700px;
+    height:10px;
+    margin:0px auto;
+    margin-top: 15px;
+    text-align: justify;
+    padding-top:0px;
+    padding-bottom:20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:16px;		
+    color: #ffffff;
+    border-right:0px solid #000000;
+    border-left:0px solid #000000;	
+    background-color:#ffffff;      
+    background-attachment:scroll;
+    background-position:right top;	
+    background-image:url(images/gradient.png);
 }
 
 
@@ -100,9 +98,9 @@ text-decoration: underline;
 	width:700px;
 	margin:0px auto;
 	text-align: justify;	
-	padding:25px;
+	padding:5px;
 	color: #000000;
-
+	padding-bottom: 25px;
 	border-right:0px solid #000000;	
 	border-left:0px solid #000000;	
 	background-color:#ffffff;   
@@ -116,8 +114,6 @@ text-decoration: underline;
 	font-size: small; /* could be specified at a higher level */
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size:15px;		
-
-
 	margin: 0;
 	padding: 0 0px 0 0px;
 	border-bottom: 1px solid #333;
