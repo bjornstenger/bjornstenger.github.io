@@ -249,19 +249,15 @@ class Entry(object):
         fid.write('\n')
         fid.write('<li>\n')
 
-        # --- chapter ---
-        chapter = False
+
+
+
         if edict.has_key('chapter'):
-          chapter = True
-          fid.write('<span class="title">')
-          fid.write(self.chapter)
-          fid.write('</span>')
-          fid.write(',<br>')
-
-
-
-        # --- title ---
-        if not(chapter):
+            fid.write('<span class="title">')
+            fid.write(self.chapter)
+            fid.write('</span>')
+            fid.write(',<br>')
+        else:
             fid.write('<span class="title">')
             fid.write(self.title)
             fid.write('</span>')
@@ -275,7 +271,7 @@ class Entry(object):
         fid.write(',<br>')
 
         # -- if book chapter --
-        if chapter:
+        if edict.has_key('chapter'):
           fid.write('in: ')
           fid.write('<i>')
           fid.write(self.title)
@@ -322,39 +318,27 @@ class Entry(object):
 
         # --- year ---
         fid.write('<span class="year">')
-        #fid.write(', ');
         fid.write(' ');
         fid.write(self.year)
         fid.write('</span>')
-        #fid.write(',\n')
 
         # final period
         fid.write('.')
 
         # --- Links ---
-        pdf = False
-        url = False
-        if edict.has_key('pdf'):
-            pdf = True
-        if edict.has_key('url') or edict.has_key('doi'):
-            url = True
 
-        if pdf or url:
-            fid.write('<br>\n[&nbsp;')
-            if pdf:
-                fid.write('<a href="')
-                fid.write(pdfpath + self.pdf)
-                fid.write('">pdf</a>&nbsp;')
-                if url:
-                    fid.write('\n|&nbsp;')
-            if url:
-                fid.write('<a href="')
-                if edict.has_key('url'):
-                    fid.write(self.url)
-                else:
-                    fid.write('http://dx.doi.org/' + self.doi)
-                fid.write('">link</a>&nbsp;')
-            fid.write(']\n')
+        fid.write('<br>')
+
+        if edict.has_key('pdf'):
+            line = '\n[&nbsp;<a href="papers/%s">pdf</a>&nbsp;]' % self.pdf
+            fid.write(line)
+
+        if edict.has_key('arxiv'):
+            line = '\n[&nbsp;<a href="%s">arxiv</a>&nbsp;]' % self.arxiv
+            fid.write(line)
+
+
+
 
         # Terminate the list entry
         fid.write('</li>\n')
@@ -451,6 +435,7 @@ def main():
   techreportlist =[]
   thesislist =[]
 
+  alllist = []
 
   # read bibtex file
   f0 = bib_reader(bibfile)
@@ -469,41 +454,57 @@ def main():
     if (e.type=="phdthesis"):
       thesislist.append(e)
 
+    alllist.append(e)
+
+
+  sort_by_type = False
+
   # write list according to publication type
+  if sort_by_type:
+      f1.write('<h2>Journals</h2>');
+      f1.write('\n<ol reversed>\n\n')
+      for e in journallist:
+        e.write(f1)
+      f1.write('\n</ol>\n\n')
 
-  f1.write('<h2>Journals</h2>');
-  f1.write('\n<ol reversed>\n\n')
-  for e in journallist:
-    e.write(f1)
-  f1.write('\n</ol>\n\n')
+      f1.write('<h2>Conferences and Workshops</h2>');
+      f1.write('\n<ol reversed>\n\n')
+      for e in conflist:
+        e.write(f1)
+      f1.write('\n</ol>\n\n')
 
-  f1.write('<h2>Conferences and Workshops</h2>');
-  f1.write('\n<ol reversed>\n\n')
-  for e in conflist:
-    e.write(f1)
-  f1.write('\n</ol>\n\n')
+      f1.write('<h2>Book Chapters</h2>');
+      f1.write('\n<ol reversed>\n\n')
+      for e in bookchapterlist:
+        e.write(f1)
+      f1.write('\n</ol>\n\n')
 
-  f1.write('<h2>Book Chapters</h2>');
-  f1.write('\n<ol reversed>\n\n')
-  for e in bookchapterlist:
-    e.write(f1)
-  f1.write('\n</ol>\n\n')
+      f1.write('<h2>Technical Reports</h2>');
+      f1.write('\n<ol reversed>\n\n')
+      for e in techreportlist:
+        e.write(f1)
+      f1.write('\n</ol>\n\n')
 
-  f1.write('<h2>Technical Reports</h2>');
-  f1.write('\n<ol reversed>\n\n')
-  for e in techreportlist:
-    e.write(f1)
-  f1.write('\n</ol>\n\n')
+      f1.write('<h2>Thesis</h2>');
+      f1.write('\n<ol reversed>\n\n')
+      for e in thesislist:
+        e.write(f1)
+      f1.write('\n</ol>\n\n')
 
-  f1.write('<h2>Thesis</h2>');
-  f1.write('\n<ol reversed>\n\n')
-  for e in thesislist:
-    e.write(f1)
-  f1.write('\n</ol>\n\n')
+      # write epilog
+      f1.write(epilog)
+      f1.close()
 
-  # write epilog
-  f1.write(epilog)
-  f1.close()
+  else: # sort by year
+      f1.write('\n<ol reversed>\n\n')
+      for e in alllist:
+        e.write(f1)
+      f1.write('\n</ol>\n\n')
+      # write epilog
+      f1.write(epilog)
+      f1.close()
+
+
 
   print 'written: '+htmlfile+'\n'
 
