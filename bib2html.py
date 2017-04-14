@@ -110,7 +110,7 @@ prolog = """<!DOCTYPE HTML
 <ul id="miniflex">
 	<li><a href="index.html">home</a></li>
 	<li><a href="research.html">research</a></li>
-	<li><a href="pubs.html" class="active">publications</a></li>
+	<li><a href="publist.html" class="active">publications</a></li>
 </ul>
 </div>
 
