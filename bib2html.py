@@ -82,7 +82,7 @@ selected_authors = [u'Yournamehere,']
 pdfpath = 'http://bjornstenger.github.io/papers/'
 
 # css style file to use
-css_file = 'style.css'
+css_file = 'style_b.css'
 
 # html prolog
 # modify according to your needs
@@ -93,32 +93,26 @@ prolog = """<!DOCTYPE HTML
   <meta http-equiv=Content-Type content="text/html; charset=%s">
   <title>%s</title>
   <link rel="stylesheet" type="text/css" href="%s">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <style type="text/css">
      span.selected {color: #000000}
      span.author {color: #000000}
-     span.title {font-weight: bold;}
-     li {margin-top: 0px; margin-bottom: 16px}
+     span.papertitle {font-weight: 700;}
+     li {margin-top: 0px; margin-bottom: 14px}
   </style>
 </head>
 <body>
-
-<div class="header">
-<strong>&nbsp;&nbsp;&nbsp;Bj&ouml;rn Stenger</strong><br>
-</div>
-
-<div class="container">
-<ul id="miniflex">
-	<li><a href="index.html">home</a></li>
-	<li><a href="research.html">research</a></li>
-	<li><a href="publist.html" class="active">publications</a></li>
-</ul>
-</div>
-
-<div id="content">
-<h2>
-[<a href="bjornstenger.bib"  target="_top">BibTeX file</a>]&nbsp;
-</h2>
-<br>
+<table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr>
+<td width="100%%" valign="middle">
+<heading>Bj&ouml;rn Stenger - List of Publications</heading>
+</td>
+</tr>
+</table>
+<table align="center" border="0" cellspacing="0" cellpadding="20"><tr><td>
 """ % (encoding, title, css_file)
 
 # now = yyyy-mm-dd
@@ -126,11 +120,16 @@ now = str(datetime.date.today())
 
 # html epilog
 epilog = """
+</td>
+</tr>
+</table>
 <br>
 <hr>
 Created %s with <a href="bib2html.py">bib2html.py</a>
 </p>
-</div>
+</td>
+</tr>
+</table>
 </body>
 </html>
 """ % (now)
@@ -250,24 +249,22 @@ class Entry(object):
         fid.write('<li>\n')
 
 
-
-
         if edict.has_key('chapter'):
-            fid.write('<span class="title">')
+            fid.write('<span class="papertitle">')
             fid.write(self.chapter)
             fid.write('</span>')
             fid.write(',<br>')
         else:
-            fid.write('<span class="title">')
+            fid.write('<span class="papertitle">')
             fid.write(self.title)
             fid.write('</span>')
             fid.write(',<br>')
 
 
         # --- author ---
-        fid.write('<span class="author">')
+        #fid.write('<span class="author">')
         fid.write(self.author)
-        fid.write('</span>')
+        #fid.write('</span>')
         fid.write(',<br>')
 
         # -- if book chapter --
@@ -317,10 +314,10 @@ class Entry(object):
             fid.write(self.month)
 
         # --- year ---
-        fid.write('<span class="year">')
+        #fid.write('<span class="year">')
         fid.write(' ');
         fid.write(self.year)
-        fid.write('</span>')
+        #fid.write('</span>')
 
         # final period
         fid.write('.')
@@ -330,18 +327,20 @@ class Entry(object):
         fid.write('<br>')
 
         if edict.has_key('pdf'):
-            line = '\n[&nbsp;<a href="papers/%s">pdf</a>&nbsp;]' % self.pdf
+            #line = '\n[&nbsp;<a href="papers/%s">pdf</a>&nbsp;]' % self.pdf
+            line = '\n[<a href="papers/%s">pdf</a>]' % self.pdf
             fid.write(line)
 
         if edict.has_key('arxiv'):
-            line = '\n[&nbsp;<a href="%s">arxiv</a>&nbsp;]' % self.arxiv
+            #line = '\n[&nbsp;<a href="%s">arxiv</a>&nbsp;]' % self.arxiv
+            line = '\n[<a href="%s">arxiv</a>]' % self.arxiv
             fid.write(line)
 
 
 
 
         # Terminate the list entry
-        fid.write('</li>\n')
+        fid.write('\n</li>\n')
 
 
 
