@@ -4,6 +4,7 @@ text-decoration:none;
 }
 a:focus, a:hover {
 color: #bf0000;
+font-size: 14px
 text-decoration:none;
 }
 body,td,th,tr,p,a {
@@ -39,14 +40,14 @@ position: relative;
 width: 160px;
 height: 160px;
 position: absolute;
-transition: opacity .2s ease-in-out;
--moz-transition: opacity .2s ease-in-out;
--webkit-transition: opacity .2s ease-in-out;
+transition: opacity .1s ease-in-out;
+-moz-transition: opacity .1s ease-in-out;
+-webkit-transition: opacity .1s ease-in-out;
 }
 .fade {
-transition: opacity .2s ease-in-out;
--moz-transition: opacity .2s ease-in-out;
--webkit-transition: opacity .2s ease-in-out;
+transition: opacity .1s ease-in-out;
+-moz-transition: opacity .1s ease-in-out;
+-webkit-transition: opacity .1s ease-in-out;
 }
 span.highlight {
 background-color: #d0d0d0;
