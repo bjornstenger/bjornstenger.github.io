@@ -1,15 +1,16 @@
 a:link {
 color: #040a0;
+font-size: 14px;
 text-decoration:none;
 }
 a:focus, a:hover {
 color: #bf0000;
-font-size: 14px
+font-size: 14px;
 text-decoration:none;
 }
 body,td,th,tr,p,a {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
-font-size: 14px
+font-size: 14px;
 }
 strong {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -17,7 +18,7 @@ font-size: 14px;
 }
 heading {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
-font-size: 140%;
+font-size: 22px;
 }
 papertitle {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -27,7 +28,7 @@ font-weight: bold;
 }
 name {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
-font-size: 140%;
+font-size: 22px;
 }
 .one
 {
