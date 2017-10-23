@@ -1,41 +1,33 @@
 a:link {
 color: #040a0;
-font-size: 0.8vw;
 text-decoration:none;
-max-height: 999999px;
 }
 a:focus, a:hover {
 color: #bf0000;
-font-size: 0.8vw;
+font-size: 14px
 text-decoration:none;
-max-height: 999999px;
 }
 body,td,th,tr,p,a {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
-font-size: 0.8vw;
-max-height: 999999px;
+font-size: 14px
 }
 strong {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
-font-size: 0.8vw;
-max-height: 999999px;
+font-size: 14px;
 }
 heading {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
 font-size: 140%;
-max-height: 999999px;
 }
 papertitle {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
-font-size: 0.8vw;
+font-size: 14px;
 font-weight: 700;
 font-weight: bold;
-max-height: 999999px;
 }
 name {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
 font-size: 140%;
-max-height: 999999px;
 }
 .one
 {
