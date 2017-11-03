@@ -82,7 +82,10 @@ selected_authors = [u'Yournamehere,']
 pdfpath = 'http://bjornstenger.github.io/papers/'
 
 # css style file to use
-css_file = 'style_b.css'
+css_file = 'style_rbg.css'
+
+# now = yyyy-mm-dd
+now = str(datetime.date.today())
 
 # html prolog
 # modify according to your needs
@@ -102,34 +105,28 @@ prolog = """<!DOCTYPE HTML
   </style>
 </head>
 <body>
-<table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-<tr>
-<td>
-<table width="100%%" align="center" border="0" cellspacing="0" cellpadding="20">
-<tr>
-<td width="100%%" valign="middle">
-<heading>Bj&ouml;rn Stenger - List of Publications</heading>
-</td>
-</tr>
-</table>
-<table align="center" border="0" cellspacing="0" cellpadding="20"><tr><td>
-""" % (encoding, title, css_file)
 
-# now = yyyy-mm-dd
-now = str(datetime.date.today())
+<div class="section">
+<h2 id="reports">Bj&ouml;rn Stenger - List of Publications</h2>
+<br>
+v%s
+<br><br>
+<div class="paper">
+
+
+""" % (encoding, title, css_file, now)
+
+
 
 # html epilog
 epilog = """
-</td>
-</tr>
-</table>
+</div>
+</div>
 <br>
 <hr>
 Created %s with <a href="bib2html.py">bib2html.py</a>
 </p>
-</td>
-</tr>
-</table>
+
 </body>
 </html>
 """ % (now)
