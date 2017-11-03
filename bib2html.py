@@ -68,8 +68,8 @@ import codecs
 # --------------------------------------------------------------------------------
 
 # output html encoding
-#encoding = 'UTF-8'
-encoding = 'ISO-8859-1'
+encoding = 'UTF-8'
+#encoding = 'ISO-8859-1'
 
 # html page title
 title = u'Publication List'
@@ -86,6 +86,7 @@ css_file = 'style_rbg.css'
 
 # now = yyyy-mm-dd
 now = str(datetime.date.today())
+
 
 # html prolog
 # modify according to your needs
