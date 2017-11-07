@@ -110,7 +110,7 @@ prolog = """<!DOCTYPE HTML
 <div class="section">
 <h2 id="reports">Bj&ouml;rn Stenger - List of Publications</h2>
 <br>
-v%s
+%s
 <br><br>
 <div class="paper">
 
