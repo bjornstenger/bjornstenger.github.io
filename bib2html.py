@@ -98,6 +98,7 @@ prolog = """<!DOCTYPE HTML
   <title>%s</title>
   <link rel="stylesheet" type="text/css" href="%s">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style type="text/css">
      span.selected {color: #000000}
      span.author {color: #000000}
@@ -111,6 +112,8 @@ prolog = """<!DOCTYPE HTML
 <h2 id="reports">Bj&ouml;rn Stenger - List of Publications</h2>
 <br>
 %s
+<br><br>
+<a href="bjornstenger.bib"><i class="fa fa-file-o"></i> bibtex file</a>
 <br><br>
 <div class="paper">
 
@@ -247,7 +250,7 @@ class Entry(object):
         fid.write('<li>\n')
 
 
-        if edict.has_key('chapter'):
+        if 'chapter' in edict:
             fid.write('<span class="papertitle">')
             fid.write(self.chapter)
             fid.write('</span>')
@@ -266,7 +269,7 @@ class Entry(object):
         fid.write(',<br>')
 
         # -- if book chapter --
-        if edict.has_key('chapter'):
+        if 'chapter' in edict:
           fid.write('in: ')
           fid.write('<i>')
           fid.write(self.title)
@@ -277,12 +280,12 @@ class Entry(object):
 
         # --- journal or similar ---
         journal = False
-        if edict.has_key('journal'):
+        if 'journal' in edict:
             journal = True
             fid.write('<i>')
             fid.write(self.journal)
             fid.write('</i>')
-        elif edict.has_key('booktitle'):
+        elif 'booktitle' in edict:
             journal = True
             fid.write(edict['booktitle'])
         elif edict['type'] == 'phdthesis':
@@ -295,19 +298,17 @@ class Entry(object):
             fid.write(edict['number'])
 
         # --- volume, pages, notes etc ---
-        if edict.has_key('volume'):
+        if 'volume' in edict:
             fid.write(', Vol. ')
             fid.write(edict['volume'])
-        if (edict.has_key('number') and edict['type']!='techreport'):
+        if ('number' in edict and edict['type']!='techreport'):
             fid.write(', No. ')
             fid.write(edict['number'])
-        if edict.has_key('pages'):
+        if 'pages' in edict:
                 fid.write(', p.')
                 fid.write(edict['pages'])
-        elif edict.has_key('note'):
-            if journal or chapter: fid.write(', ')
-            fid.write(edict['note'])
-        if edict.has_key('month'):
+
+        if 'month' in edict:
             fid.write(', ')
             fid.write(self.month)
 
@@ -320,16 +321,22 @@ class Entry(object):
         # final period
         fid.write('.')
 
+        if 'note' in edict:
+            if journal or chapter: fid.write(' <i>')
+            fid.write(edict['note'])
+            # final period
+            fid.write('</i>.')
+
         # --- Links ---
 
         fid.write('<br>')
 
-        if edict.has_key('pdf'):
+        if 'pdf' in edict:
             #line = '\n[&nbsp;<a href="papers/%s">pdf</a>&nbsp;]' % self.pdf
             line = '\n[<a href="papers/%s">pdf</a>]' % self.pdf
             fid.write(line)
 
-        if edict.has_key('arxiv'):
+        if 'arxiv' in edict:
             #line = '\n[&nbsp;<a href="%s">arxiv</a>&nbsp;]' % self.arxiv
             line = '\n[<a href="%s">arxiv</a>]' % self.arxiv
             fid.write(line)
@@ -355,7 +362,8 @@ def bib_reader(filename):
 
         # skip irrelevant lines
         while True:
-            line = fid.next()
+            #line = fid.next()
+            line = next(fid)
             if len(line) > 0:
                 if line[0] == '@': break           # Found entry
 
@@ -371,7 +379,8 @@ def bib_reader(filename):
             # Iterate through the fields of the entry
             first_field = True
             while True:
-                line = fid.next()
+                #line = fid.next()
+                line = next(fid)
                 #print line + '\n'
                 words = line.split()
 
@@ -503,7 +512,7 @@ def main():
 
 
 
-  print 'written: '+htmlfile+'\n'
+  print ('written: '+htmlfile+'\n')
 
 if __name__ == '__main__':
   main()
