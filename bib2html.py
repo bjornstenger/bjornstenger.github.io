@@ -113,7 +113,7 @@ prolog = """<!DOCTYPE HTML
 <br>
 %s
 <br><br>
-<a href="bjornstenger.bib"><i class="fa fa-file-o"></i> bibtex file</a>
+<a href="bjornstenger.bib"><i class="fa fa-file-o" style="padding-right: 1px""></i> bibtex file</a>
 <br><br>
 <div class="paper">
 
