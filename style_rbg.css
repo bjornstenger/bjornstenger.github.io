@@ -1,3 +1,6 @@
+
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
 font, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, dl, dt,
@@ -45,11 +48,23 @@ body {
   position: relative;
   margin: 3em auto 2em auto;
   width: 800px;
-  font-family: Lato, Verdana, Helvetica, sans-serif;
+  /*font-family: Lato, Verdana, Helvetica, sans-serif;*/
+  font-family: 'Lato', sans-serif;
+  /*font-family: 'HelveticaNeue45W01-Ligh', sans-serif;*/
   font-size: 14px;
   background: #eee;
   background: #fff;
 }
+
+div.credits{
+clear:      both;
+text-align: center;
+font-size: 10; 
+}
+a.credits:link { color:#ddd; text-decoration:none; font-weight:normal; }
+a.credits:visited { color: #ddd; text-decoration:none; font-weight:normal; }
+a.credits:hover { color: #ddd; text-decoration:underline; font-weight:normal; }
+a.credits:active { color: #ddd; text-decoration:none; font-weight:normal; }
 
 h2 {
   font-family: Lato, Verdana, Helvetica, sans-serif;
@@ -171,3 +186,4 @@ pre, code {
 div.paper pre {
   font-size: 0.9em;
 }
+
