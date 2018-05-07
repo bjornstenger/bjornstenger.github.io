@@ -279,6 +279,7 @@ class Entry(object):
 
         # --- journal or similar ---
         journal = False
+        chapter = False
         if 'journal' in edict:
             journal = True
             fid.write('<i>')
