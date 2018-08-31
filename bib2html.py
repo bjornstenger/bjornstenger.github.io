@@ -3,7 +3,7 @@
 '''Convert utility from bibtex to html'''
 
 # --------------------------------------------------------------------------------
-# Copyright (C) 2011 by Bjørn Ådlandsvik and Björn Stenger
+# Copyright (C) 2011-2018 by Bjørn Ådlandsvik & Björn Stenger
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -69,7 +69,6 @@ import codecs
 
 # output html encoding
 encoding = 'UTF-8'
-#encoding = 'ISO-8859-1'
 
 # html page title
 title = u'Publication List'
@@ -242,7 +241,7 @@ class Entry(object):
     def write(self, fid):
         """Write entry to html file"""
 
-        edict = self.__dict__  # bruke
+        edict = self.__dict__ 
 
         # --- Start list ---
         fid.write('\n')
@@ -251,12 +250,18 @@ class Entry(object):
 
         if 'chapter' in edict:
             fid.write('<span class="papertitle">')
-            fid.write(self.chapter)
+            if 'pdf' in edict:
+              fid.write('<a href="papers/%s">%s</a>' % (self.pdf, self.chapter))
+            else:
+              fid.write(self.chapter)
             fid.write('</span>')
             fid.write(',<br>')
         else:
             fid.write('<span class="papertitle">')
-            fid.write(self.title)
+            if 'pdf' in edict:
+              fid.write('<a href="papers/%s">%s</a>' % (self.pdf, self.title))
+            else:
+              fid.write(self.title)
             fid.write('</span>')
             fid.write(',<br>')
 
@@ -271,7 +276,10 @@ class Entry(object):
         if 'chapter' in edict:
           fid.write('in: ')
           fid.write('<i>')
-          fid.write(self.title)
+          if 'pdf' in edict:
+            fid.write('<a href="papers/%s">%s</a>' % (self.pdf, self.title))
+          else:
+            fid.write(self.title)
           fid.write('</i>')
           fid.write(', ')
           fid.write(self.publisher)
@@ -340,8 +348,6 @@ class Entry(object):
             #line = '\n[&nbsp;<a href="%s">arxiv</a>&nbsp;]' % self.arxiv
             line = '\n[<a href="%s">arxiv</a>]' % self.arxiv
             fid.write(line)
-
-
 
 
         # Terminate the list entry
