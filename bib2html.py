@@ -357,59 +357,52 @@ class Entry(object):
 
 
 # --------------------------------------------------------------------------------
-# generator: bibtex reader
+#  bibtex reader
 # --------------------------------------------------------------------------------
 def bib_reader(filename):
     '''Generator for iteration over entries in a bibtex file'''
 
-    fid = open(filename)
+    with open(filename, "r+") as fid:
 
-    while True:
+      for line in fid:
+          #print (line)
+          line = line.strip()
 
-        # skip irrelevant lines
-        while True:
-            #line = fid.next()
-            line = next(fid)
-            if len(line) > 0:
-                if line[0] == '@': break           # Found entry
+          if len(line) > 0:
 
-        # Handle entry
-        if line[0] == '@':
-            e = Entry()
+            if line[0] == '@': # Found entry
+               e = Entry()
+               words = line.split('{')
+               e.type = words[0][1:].lower()
 
-            # entry type mellon @ og {
-            words = line.split('{')
-            e.type = words[0][1:].lower()
-            #print e.type + '\n'
+               # Iterate through the fields of the entry
+               first_field = True
+               while True:
+                    #line = fid.next()
+                    line = next(fid)
+                    #print line + '\n'
+                    words = line.split()
 
-            # Iterate through the fields of the entry
-            first_field = True
-            while True:
-                #line = fid.next()
-                line = next(fid)
-                #print line + '\n'
-                words = line.split()
 
-                if words[0] == "}": # end of entry
-                    # store last field
-                    setattr(e, fieldname, fieldtext)
-                    break
-
-                if len(words) > 1 and words[1] == "=": # new field
-                    # store previous field
-                    if not first_field:
+                    if words[0] == "}": # end of entry
+                        # store last field
                         setattr(e, fieldname, fieldtext)
-                    else:
-                        first_field = False
-                    #inline = True
-                    fieldname = words[0].lower()
-                    fieldtext = " ".join(words[2:]) # remains a text
+                        break
 
-                else:  # continued line
-                    fieldtext = " ".join([fieldtext] + words)
+                    if len(words) > 1 and words[1] == "=": # new field
+                        # store previous field
+                        if not first_field:
+                            setattr(e, fieldname, fieldtext)
+                        else:
+                            first_field = False
+                        #inline = True
+                        fieldname = words[0].lower()
+                        fieldtext = " ".join(words[2:]) # remains a text
 
-        yield e
+                    else:  # continued line
+                        fieldtext = " ".join([fieldtext] + words)
 
+               yield e
 
 
 
