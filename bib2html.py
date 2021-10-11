@@ -253,7 +253,10 @@ class Entry(object):
             if 'pdf' in edict:
               fid.write('<a href="papers/%s">%s</a>' % (self.pdf, self.chapter))
             else:
-              fid.write(self.chapter)
+                if 'pdfurl' in edict:
+                    fid.write('<a href="%s">%s</a>' % (self.pdfurl, self.chapter))
+                else:
+                    fid.write(self.chapter)
             fid.write('</span>')
             fid.write(',<br>')
         else:
@@ -261,7 +264,10 @@ class Entry(object):
             if 'pdf' in edict:
               fid.write('<a href="papers/%s">%s</a>' % (self.pdf, self.title))
             else:
-              fid.write(self.title)
+                if 'pdfurl' in edict:
+                    fid.write('<a href="%s">%s</a>' % (self.pdfurl, self.title))
+                else:
+                    fid.write(self.title)
             fid.write('</span>')
             fid.write(',<br>')
 
