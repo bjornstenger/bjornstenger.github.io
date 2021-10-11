@@ -344,6 +344,12 @@ class Entry(object):
             line = '\n[<a href="papers/%s">pdf</a>]' % self.pdf
             fid.write(line)
 
+        if 'pdfurl' in edict:
+            #line = '\n[&nbsp;<a href="papers/%s">pdf</a>&nbsp;]' % self.pdf
+            line = '\n[<a href="%s">pdf</a>]' % self.pdfurl
+            fid.write(line)
+
+
         if 'arxiv' in edict:
             #line = '\n[&nbsp;<a href="%s">arxiv</a>&nbsp;]' % self.arxiv
             line = '\n[<a href="%s">arxiv</a>]' % self.arxiv
