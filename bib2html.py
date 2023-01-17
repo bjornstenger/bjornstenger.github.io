@@ -355,6 +355,11 @@ class Entry(object):
             line = '\n[<a href="%s">pdf</a>]' % self.pdfurl
             fid.write(line)
 
+        if 'code' in edict:
+            #line = '\n[&nbsp;<a href="papers/%s">pdf</a>&nbsp;]' % self.pdf
+            line = '\n[<a href="%s">code</a>]' % self.code
+            fid.write(line)
+
 
         if 'arxiv' in edict:
             #line = '\n[&nbsp;<a href="%s">arxiv</a>&nbsp;]' % self.arxiv
@@ -458,7 +463,8 @@ def main():
   f0 = bib_reader(bibfile)
 
    # Iterate over the entries and bib2html directives
-  for e in f0:
+  for index, e in enumerate(f0):
+    #print("index: %d" % index)
     e.clean()
     if (e.type=="inbook"):
       bookchapterlist.append(e)
@@ -472,6 +478,7 @@ def main():
       thesislist.append(e)
 
     alllist.append(e)
+
 
 
   sort_by_type = False
@@ -514,7 +521,9 @@ def main():
 
   else: # sort by year
       f1.write('\n<ol reversed>\n\n')
-      for e in alllist:
+      for index, e in enumerate(alllist):
+        print ("index: %d" % index)
+        print ()
         e.write(f1)
       f1.write('\n</ol>\n\n')
       # write epilog
