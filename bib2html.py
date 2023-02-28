@@ -198,17 +198,26 @@ class Entry(object):
                 authors = [a.strip() for a in authors]
 
                 # make blanks non-breakable
-                authors = [a.replace(' ', '&nbsp;') for a in authors]
+                #authors = [a.replace(' ', '&nbsp;') for a in authors]
 
                 # reverse first and surname
                 for i, a in enumerate(authors):
-                    #print a + "\n"
-                    #surname =
-                    namearray = a.split('&nbsp;')
-                    surname = namearray[0]
-                    surname = surname.replace(',', '')
-                    firstname = ' '.join(namearray[1:])
-                    authors[i] = firstname + " " + surname
+                    #namearray = a.split('&nbsp;')
+                    #surname = namearray[0]
+                    #surname = surname.replace(',', '')
+                    #firstname = ' '.join(namearray[1:])
+                    #authors[i] = firstname + " " + surname
+
+                    # split in to first name and surname
+                    namevec = a.split(',')
+                    print ("namevec")
+                    print (namevec)
+                    lastname = namevec[0]
+                    firstname = namevec[1]
+                    authors[i] = firstname + ' ' + lastname
+                    
+
+
 
 
                 # mark selected authors - if there are any
@@ -358,6 +367,11 @@ class Entry(object):
         if 'code' in edict:
             #line = '\n[&nbsp;<a href="papers/%s">pdf</a>&nbsp;]' % self.pdf
             line = '\n[<a href="%s">code</a>]' % self.code
+            fid.write(line)
+
+        if 'video' in edict:
+            #line = '\n[&nbsp;<a href="papers/%s">pdf</a>&nbsp;]' % self.pdf
+            line = '\n[<a href="%s">video</a>]' % self.video
             fid.write(line)
 
 
