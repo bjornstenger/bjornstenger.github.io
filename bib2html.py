@@ -210,8 +210,8 @@ class Entry(object):
 
                     # split in to first name and surname
                     namevec = a.split(',')
-                    print ("namevec")
-                    print (namevec)
+                    #print ("namevec")
+                    #print (namevec)
                     lastname = namevec[0]
                     firstname = namevec[1]
                     authors[i] = firstname + ' ' + lastname
@@ -412,6 +412,8 @@ def bib_reader(filename):
                     #line = fid.next()
                     line = next(fid)
                     #print line + '\n'
+
+                    line = line.replace('=', ' = ')
                     words = line.split()
 
 
@@ -536,8 +538,8 @@ def main():
   else: # sort by year
       f1.write('\n<ol reversed>\n\n')
       for index, e in enumerate(alllist):
-        print ("index: %d" % index)
-        print ()
+        #print ("index: %d" % index)
+        #print ()
         e.write(f1)
       f1.write('\n</ol>\n\n')
       # write epilog
