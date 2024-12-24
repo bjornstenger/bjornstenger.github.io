@@ -145,7 +145,7 @@ Created %s with <a href="bib2html.py">bib2html.py</a>
 
 # regular expression for \emph{...{...}*...}
 emph = re.compile(u'''
-            \\\\emph{                       # \emph{
+            \\\\emph{
             (?P<emph_text>([^{}]*{[^{}]*})*.*?)  # (...{...})*...
             }''', re.VERBOSE)               # }
 
@@ -177,7 +177,7 @@ class Entry(object):
 
             # fix \emph in title
             if k == 'title':
-                v = re.sub(emph, '<I>\g<emph_text></I>', v)
+                v = re.sub(emph, '<I><emph_text></I>', v)
 
             # remove "{" and "}"
             v = v.replace('{', '')
